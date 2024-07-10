@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  --primary: #ff9600;
+  --light: #f3f3f3;
+  --white: #ffffff;
+  --black: #191a23;
+  --green: #00d9a6;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  padding: 3.75rem 0;
+}
+@media screen and (max-width: 1240px) {
+  body {
+    padding: 3.75rem 2.25rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure {
+  margin: 0;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.page-title {
+  background-color: var(--primary);
+  border-radius: 7px;
+  padding: 0px 7px;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.page-title:nth-child(1) {
+  margin-bottom: 3rem;
+}
+.page-title:nth-child(3) {
+  margin-bottom: 1.5rem;
+}
+
+.page-description {
+  margin-bottom: 3rem;
+  font-size: 1.125rem;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.articles-wrp {
+  margin-bottom: 7.813rem;
+}
+.articles-button {
+  width: 235px;
+  background-color: var(--primary);
+  display: block;
+  margin: 0 auto;
+  padding: 20px 35px;
+  border: none;
+  border-radius: 14px;
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.article {
+  max-width: 600px;
+  background-color: var(--light);
+  border: 1px solid var(--black);
+  border-radius: 45px;
+  box-shadow: 0 5px 0 var(--black);
+  padding: 3rem;
+}
+.article .article-title {
+  background-color: var(--primary);
+  border-radius: 8px;
+  padding: 0px 12px;
+  font-size: 1.875rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.article .article-title-span {
+  font-size: 3.75rem;
+}
+.article .description {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.article:nth-child(2) {
+  max-width: 600px;
+  background-color: var(--primary);
+  border: 1px solid var(--black);
+  border-radius: 45px;
+  box-shadow: 0 5px 0 var(--black);
+  padding: 3rem;
+}
+.article:nth-child(2) .article-title {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 0px 12px;
+  font-size: 1.875rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.article:nth-child(2) .article-title-span {
+  font-size: 3.75rem;
+}
+.article:nth-child(2) .description {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.article:nth-child(3) {
+  max-width: 600px;
+  background-color: var(--black);
+  border: 1px solid var(--black);
+  border-radius: 45px;
+  box-shadow: 0 5px 0 var(--black);
+  padding: 3rem;
+}
+.article:nth-child(3) .article-title {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 0px 12px;
+  font-size: 1.875rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.article:nth-child(3) .article-title-span {
+  font-size: 3.75rem;
+}
+.article:nth-child(3) .description {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: var(--white);
+}
+
+.slider-wrp {
+  background-color: var(--black);
+  border-radius: 45px;
+  padding: 3rem 0;
+  position: relative;
+}
+.slider-wrp .slide-item {
+  background-color: var(--white);
+  width: 100%;
+  max-width: 430px;
+  border-radius: 12px;
+  padding: 12px;
+  gap: 12px;
+}
+.slider-wrp .slide-item-image {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 0.75rem;
+}
+.slider-wrp .slide-caption {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.125rem;
+}
+.slider-wrp .slide-button {
+  width: 100%;
+  display: block;
+  background-color: var(--green);
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.slick-track {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.slick-dots {
+  display: flex;
+  gap: 1.125rem;
+  justify-content: center;
+  list-style: none;
+  color: red;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+.slick-dots .slick-active path {
+  fill: var(--primary);
+}
+.slick-dots .my-dot:hover path {
+  fill: var(--primary);
+}
+
+.slick-arrow {
+  width: 16px;
+}
+
+.slick-arrow-wrp {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  display: block;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1019607843);
+  background-color: var(--white);
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.slick-arrow-wrp:hover {
+  background-color: var(--primary);
+  border: none;
+}
+.slick-arrow-wrp:hover .custom-arrow path {
+  fill: #000;
+}
+
+.slick-prev {
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.slick-next {
+  right: 0;
+  transform: translateX(50%) translateY(-50%);
+}
+.slick-next .custom-arrow {
+  transform: scaleX(-1);
+}
+
+/*# sourceMappingURL=style.css.map */
